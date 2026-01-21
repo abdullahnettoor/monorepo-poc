@@ -3,7 +3,7 @@ go 1.25.3
 use (
 	./libs/go/auth-middleware
 	./libs/go/logger
-	./libs/go/observability
+	./libs/go/observability/v1
 	./services/auth
 	./services/orders
 )
