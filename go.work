@@ -1,1 +1,9 @@
 go 1.25.3
+
+use (
+	./libs/go/auth-middleware
+	./libs/go/logger
+	./libs/go/observability
+	./services/auth
+	./services/orders
+)
