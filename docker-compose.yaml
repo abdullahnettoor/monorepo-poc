@@ -69,6 +69,16 @@ services:
     volumes:
       - keycloak_data:/opt/keycloak/data
 
+  # Frontend (React/Vite)
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "3001:80"
+    environment:
+      - VITE_API_URL=http://localhost:8081
+
 volumes:
   postgres_data:
   redis_data:
